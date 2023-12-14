@@ -88,7 +88,7 @@ public class CustomSet<Type> {
 	 * right side elements to the left. If the key is not found, it prints a notice
 	 * indicating that the element was not found in the set.
 	 */
-	public void Remove(Type key) {
+	public <T> void Remove(T key) {
 		boolean elementFound = false;
 		for (int index = 0; index < size; index++) {
 			if (key.equals(elements[index])) {

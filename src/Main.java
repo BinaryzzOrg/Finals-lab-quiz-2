@@ -66,7 +66,7 @@ public class Main {
 	 * MenuChoices method also handles missinputs of the user and loops if it
 	 * detects one.
 	 */
-	public static void MenuChoices(CustomSet<Integer> set, boolean isSetA, boolean isSetB) {
+	public static <T> void MenuChoices(CustomSet<T> set, boolean isSetA, boolean isSetB) {
 		System.out.print(PrintMenuChoices());
 
 		switch (CheckUserInput(PrintMenuChoices())) {
@@ -80,7 +80,7 @@ public class Main {
 									"┇ \033[3mElement is already in the set.\033[0m \n" +
 									"⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃\n");
 			//@formatter:on
-			set.Display("");
+			SetToDisplay(set, isSetA);
 			break;
 		case 2:// remove
 			if (set.getSize() <= 0) {
@@ -96,10 +96,11 @@ public class Main {
 
 			System.out.print("Enter key to remove 》 ");
 			set.Remove(CheckUserInput("Enter key to remove 》 "));
-			set.Display("");
+
+			SetToDisplay(set, isSetA);
 			break;
 		case 3:// display
-			set.Display("");
+			SetToDisplay(set, isSetA);
 			break;
 		case 4:// <- back
 			return;
@@ -137,7 +138,6 @@ public class Main {
 	 * This method also can handle missinputs and loops when it detects one. It also
 	 * returns each operations results and puts it on another CustomSet class called
 	 * setC, which is called in the printSets method.
-	 * 
 	 */
 	public static void SetOperation() {
 		if (IsSetEmpty()) {
@@ -249,7 +249,6 @@ public class Main {
 	 * set elements.
 	 * 
 	 */
-
 	public static String PrintSetOperations() {
 		String SetOperations =
 		//@formatter:off
@@ -271,7 +270,6 @@ public class Main {
 	 * This method prints the elements of Set A, Set B, and the result of the
 	 * operation, Set C.
 	 */
-
 	public static void printSets(String prompt) {
 
 		// @formatter:off
@@ -326,6 +324,17 @@ public class Main {
 		} // end
 
 		return false;
+	}// end method
+
+	/*
+	 * This method simply determines which set is using the display method
+	 */
+	public static <T> void SetToDisplay(CustomSet<T> set, boolean isSetA) {
+		if (isSetA) {
+			set.Display("A");
+		} else {
+			set.Display("B");
+		} // end if else
 	}// end method
 
 }// end class
