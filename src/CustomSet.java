@@ -92,8 +92,8 @@ public class CustomSet<Type> {
 			//@formatter:off
 			System.out.println("\n" +
 							"⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃\n" +
-							"┇ Notice:			         ┇\n" +
-							"┇ The element " + key + " was not found in the set ┇\n" +
+							"┇ Notice: \n" +
+							"┇ The element " + key + " was not found in the set \n" +
 							"⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃");
 			//@formatter:on
 		} // end if
@@ -149,8 +149,6 @@ public class CustomSet<Type> {
 		} // end for
 
 		// prints setC
-		System.out.print("Set C: ");
-		setC.Display();
 		return setC;
 	}// end method
 
@@ -211,11 +209,11 @@ public class CustomSet<Type> {
 	}// end method
 
 	// displays the set elements
-	public void Display() {
+	public void Display(String set) {
 		//@formatter:off
 			System.out.print("\n" +
 							"⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃\n" +
-							"┇ Display:			   ┇\n" +
+							"┇ Display: Set "+ set +"\n"+
 							"┇ ");
 		//@formatter:on
 		for (int index = 0; index < size; index++) {

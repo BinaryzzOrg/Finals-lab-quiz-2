@@ -42,11 +42,11 @@ public class Main {
 			// @formatter:off
 			System.out.println("\n" +
 							"⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃\n" +
-							"┇ Error:			    ┇\n" +
-							"┇ Input is not a valid Set Choices. ┇\n" +
+							"┇ Error: \n" +
+							"┇ Input is not a valid Set Choices. \n" +
 							"⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃\n" +
-							"┇ Msg: 				    ┇\n" +
-							"┇ \033[3mPlease enter only 1 to 4 as input\033[0m	┇\n" +
+							"┇ Msg: \n" +
+							"┇ \033[3mPlease enter only 1 to 4 as input\033[0m	\n" +
 							"⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃");
 			// @formatter:on
 			break;
@@ -76,19 +76,19 @@ public class Main {
 			//@formatter:off
 			set.Add(CheckUserInput("Enter Key to add 》 "), "\n" +
 									"⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃\n" +
-									"┇ Notice:			   ┇\n" +
-									"┇ \033[3mElement is already in the set.\033[0m    ┇\n" +
+									"┇ Notice: \n" +
+									"┇ \033[3mElement is already in the set.\033[0m \n" +
 									"⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃\n");
 			//@formatter:on
-			set.Display();
+			set.Display("");
 			break;
 		case 2:// remove
 			if (set.getSize() <= 0) {
 				//@formatter:off
 				System.out.println("\n" +
 								"⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃\n" +
-								"┇ Notice:			   ┇\n" +
-								"┇ \033[3mSet is already empty.\033[0m	   ┇\n" +
+								"┇ Notice: \n" +
+								"┇ \033[3mSet is already empty.\033[0m \n" +
 								"⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃");
 				//@formatter:on
 				break;
@@ -96,10 +96,10 @@ public class Main {
 
 			System.out.print("Enter key to remove 》 ");
 			set.Remove(CheckUserInput("Enter key to remove 》 "));
-			set.Display();
+			set.Display("");
 			break;
 		case 3:// display
-			set.Display();
+			set.Display("");
 			break;
 		case 4:// <- back
 			return;
@@ -111,11 +111,11 @@ public class Main {
 			// @formatter:off
 			System.out.println("\n" +
 							"⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃\n" +
-							"┇ Error:			    ┇\n" +
-							"┇ Input is not a valid Menu choice. ┇\n" +
+							"┇ Error: \n" +
+							"┇ Input is not a valid Menu choice. \n" +
 							"⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃\n" +
-							"┇ Msg: 				    ┇\n" +
-							"┇ \033[3mPlease enter only 1 to 5 as input\033[0m	┇\n" +
+							"┇ Msg: \n" +
+							"┇ \033[3mPlease enter only 1 to 5 as input\033[0m \n" +
 							"⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃");
 			// @formatter:on
 			break;
@@ -170,14 +170,12 @@ public class Main {
 	}// end method
 
 	/*
-	 * Now this methods function is simple, it basically scans the input of user and
-	 * firsts check if it is an integer, once that is confirmed by the condition,
-	 * this integer input will now be stored in the key variabale and sent back to
-	 * the other method that is using this CheckUserInput.
-	 * 
-	 * Now if the input was not an int then it would print out an error, and tells
-	 * the user to enter an integer value next time. The prompt parameter is for
-	 * different scenarios of printing needed for certain menus.
+	 * The CheckUserInput method scans the user's input and checks if it is an
+	 * integer. If the input is an integer, it is stored in the 'key' variable and
+	 * returned to the calling method. If the input is not an integer, an error
+	 * message is displayed, and the user is prompted to enter an integer value. The
+	 * 'prompt' parameter is used for different scenarios of printing needed for
+	 * certain menus.
 	 */
 	public static int CheckUserInput(String prompt) {
 		Scanner sc = new Scanner(System.in);
@@ -190,11 +188,11 @@ public class Main {
 		// @formatter:off
 			System.out.println("\n" +
 						"⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃\n" +
-						"┇ Error:			    ┇\n" +
-						"┇ Input is not an integer value.    ┇\n" +
+						"┇ Error: \n" +
+						"┇ Input is not an integer value. \n" +
 						"⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃\n" +
-						"┇ Msg: 				    ┇\n" +
-						"┇ \033[3mPlease enter integer/s input only\033[0m	┇\n" +
+						"┇ Msg: \n" +
+						"┇ \033[3mPlease enter integer/s input only\033[0m \n" +
 						"⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃\n");
 		// @formatter:on
 		System.out.print(prompt);
@@ -202,9 +200,10 @@ public class Main {
 	}// end if
 
 	/*
-	 * This method simply returns a string of the menu for choosing a set that the
-	 * user also sees on the first time they run the code. This method is also seen
-	 * passed on, in parameters of methods that uses the String prompt.
+	 * The PrintSetPicker method returns a formatted string representing the menu
+	 * for choosing a set. This menu is displayed to the user when they run the code
+	 * for the first time. The method is also passed as a parameter to other methods
+	 * that use the 'prompt' String.
 	 */
 	public static String PrintSetPicker() {
 		String SetPickerAsString =
@@ -212,10 +211,10 @@ public class Main {
 				 		"\n" + 
 						"{Choose a Set/Operations}\n"+ 
 						"━━━━━━━━━━━━━━━━━━━━━━━━━\n"+ 
-						"┃ 【 1 】 Set A		┃\n" +
-						"┃ 【 2 】 Set B 		┃\n" + 
-						"┃ 【 3 】 Set Operations 	┃\n" + 
-						"┃ 【 4 】 Exit 		┃\n" + 
+						"┃ 【 1 】 Set A \n" +
+						"┃ 【 2 】 Set B \n" + 
+						"┃ 【 3 】 Set Operations \n" + 
+						"┃ 【 4 】 Exit  \n" + 
 						"━━━━━━━━━━━━━━━━━━━━━━━━━\n" + 
 						"》 ";
 		//@formatter:on
@@ -232,11 +231,11 @@ public class Main {
 						"\n" + 
 						"  {Normal Operations}\n"+ 
 						"━━━━━━━━━━━━━━━━━━━━━━━━━\n"+ 
-						"┃ 【 1 】 Add		┃\n" +
-						"┃ 【 2 】 Remove 		┃\n" + 
-						"┃ 【 3 】 Display 		┃\n" + 
-						"┃ 【 4 】 <- Back 		┃\n" + 
-						"┃ 【 5 】 Exit 		┃\n" + 
+						"┃ 【 1 】 Add	 \n" +
+						"┃ 【 2 】 Remove \n" + 
+						"┃ 【 3 】 Display \n" + 
+						"┃ 【 4 】 <- Back \n" + 
+						"┃ 【 5 】 Exit \n" + 
 						"━━━━━━━━━━━━━━━━━━━━━━━━━\n" + 
 						"》 ";
 		//@formatter:on
@@ -244,19 +243,23 @@ public class Main {
 	}// end method
 
 	/*
-	 * This method, like the others above, also returns a string of menu that is
-	 * used to show user what Sets Operations they can use.
+	 * 
+	 * This method, is similar like the others , also returns a string representing
+	 * the menu that is used to show the user what set operations they can perform.
+	 * set elements.
+	 * 
 	 */
+
 	public static String PrintSetOperations() {
 		String SetOperations =
 		//@formatter:off
 						"\n" + 
 						"	{Sets Operations}\n"+ 
 						"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"+ 
-						"┃ 【 1 】 Union (A ∪ B)          ┃\n" +
-						"┃ 【 2 】 Intersection (A ∩ B)   ┃\n" + 
-						"┃ 【 3 】 Difference (A − B)     ┃\n" +
-						"┃ 【 4 】 <-Back                 ┃\n" + 
+						"┃ 【 1 】 Union (A ∪ B) \n" +
+						"┃ 【 2 】 Intersection (A ∩ B) \n" + 
+						"┃ 【 3 】 Difference (A − B) \n" +
+						"┃ 【 4 】 <-Back \n" + 
 						"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n" + 
 						"》 ";
 		//@formatter:on
@@ -264,10 +267,11 @@ public class Main {
 	}// end method
 
 	/*
-	 * printSets is used when printing the results of the Sets Operations This
-	 * method prints Set A elements, Set B elements and the result of the operation,
-	 * Set C.
+	 * The printSets method is used when printing the results of set operations.
+	 * This method prints the elements of Set A, Set B, and the result of the
+	 * operation, Set C.
 	 */
+
 	public static void printSets(String prompt) {
 
 		// @formatter:off
@@ -277,39 +281,40 @@ public class Main {
 						"⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃\n");
 		// @formatter:on
 		System.out.print("Set A: ");
-		setA.Display();
+		setA.Display("A");
 		System.out.print("Set B: ");
-		setB.Display();
+		setB.Display("B");
 		System.out.print("Set C: ");
-		setC.Display();
+		setC.Display("C");
 	}// end method
 
 	/*
-	 * This method returns a string and that is used for error printing, it prints
-	 * the warning if the user tried to use Sets Operations and Set A or Set B is
-	 * empty. It tells the user what set is empty and tells them to add elements to
-	 * that specific set.
+	 * The PrintSetIsEmpty method returns a string used for error printing. It
+	 * prints a warning if the user attempts to use set operations when Set A or Set
+	 * B is empty. It state which set is empty and advises the user to add elements
+	 * to that specific set.
 	 */
 	public static String PrintSetIsEmpty(String set) {
 		String SetsIsEmpty =
 		// @formatter:off
 					"\n" +
 					"⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃\n" +
-					"┇ Error:			     ┇\n" +
-					"┇ Set " + set + " is empty. 		     ┇\n" +
+					"┇ Error: \n" +
+					"┇ Set " + set + " is empty.\n" +
 					"⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃\n" +
-					"┇ Msg: 				     ┇\n" +
-					"┇ \033[3mPlease add elements in set " + set + " first\033[0m	┇\n" +
+					"┇ Msg: \n" +
+					"┇ \033[3mPlease add elements in set " + set + " first\033[0m \n" +
 					"⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃\n";
 				// @formatter:on
 		return SetsIsEmpty;
 	}// end method
 
 	/*
-	 * IsSetEmpty is used to check set A and B if they are empty, if they are then
-	 * return true, if not then return false. It calls the PrintSetIsEmpty method
-	 * and pass in the string A or B for the PrintSetIsEmpty to use and indicate in
-	 * the error printing which set is empty.
+	 * The IsSetEmpty method is used to check if Set A and Set B are empty. If they
+	 * are empty, it returns true otherwise, it returns false. The method calls the
+	 * PrintSetIsEmpty method and passes in the string "A" or "B" for
+	 * PrintSetIsEmpty to use, indicating in the error message which set is empty.
+	 * 
 	 */
 	public static boolean IsSetEmpty() {
 		if (setA.getSize() == 0) {
