@@ -26,10 +26,10 @@ public class Main {
 
 		switch (CheckUserInput(PrintSetPicker())) {
 		case 1:
-			MenuChoices(setA, true, false);
+			MenuChoices(setA, true);
 			break;
 		case 2:
-			MenuChoices(setB, false, true);
+			MenuChoices(setB, false);
 			break;
 		case 3:
 			SetOperation();
@@ -66,7 +66,7 @@ public class Main {
 	 * MenuChoices method also handles missinputs of the user and loops if it
 	 * detects one.
 	 */
-	public static <T> void MenuChoices(CustomSet<T> set, boolean isSetA, boolean isSetB) {
+	public static <T> void MenuChoices(CustomSet<T> set, boolean isSetA) {
 		System.out.print(PrintMenuChoices());
 
 		switch (CheckUserInput(PrintMenuChoices())) {
@@ -123,9 +123,9 @@ public class Main {
 		}// end switch
 
 		if (isSetA) {
-			MenuChoices(setA, isSetA, isSetB);
+			MenuChoices(setA, isSetA);
 		} else {
-			MenuChoices(setB, isSetA, isSetB);
+			MenuChoices(setB, isSetA);
 		} // end if else
 	}// end method
 
